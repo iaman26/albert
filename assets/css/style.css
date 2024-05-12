@@ -1153,14 +1153,14 @@ section .faq__list .list__block .block__header {
   font-weight: 700;
   line-height: 28px;
 }
-@media screen and (max-width: 500px) {
-  section .faq__list .list__block .block__header {
-    font-size: 28px;
-  }
-}
 @media screen and (max-width: 768px) {
   section .faq__list .list__block .block__header {
-    font-size: 32px;
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section .faq__list .list__block .block__header {
+    font-size: 16px;
   }
 }
 section .faq__list .list__block .block__header svg {
