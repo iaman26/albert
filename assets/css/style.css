@@ -336,26 +336,6 @@ video {
   pointer-events: none;
 }
 
-.visible {
-  visibility: visible;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.relative {
-  position: relative;
-}
-
-.sticky {
-  position: sticky;
-}
-
 .inset-0 {
   inset: 0rem;
 }
@@ -429,18 +409,6 @@ video {
 
 .\!block {
   display: block !important;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.hidden {
-  display: none;
 }
 
 .aspect-square {
@@ -624,14 +592,6 @@ video {
 
 .items-center {
   align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .gap-1 {
@@ -1169,4 +1129,51 @@ video {
 
 .min-h-f-screen {
   min-height: calc(100vh - 4rem);
+}
+section .faq__list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 80px;
+}
+section .faq__list .list__block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #293689;
+}
+section .faq__list .list__block .block__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  font-family: "Segoe UI";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+@media screen and (max-width: 500px) {
+  section .faq__list .list__block .block__header {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .faq__list .list__block .block__header {
+    font-size: 32px;
+  }
+}
+section .faq__list .list__block .block__header svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -16px;
+}
+section .faq__list .list__block.active .block__header svg {
+  transform: rotate(90deg);
+}
+section .faq__list .list__block .block__content {
+  display: none;
+  margin-top: 24px;
+  margin-left: 20px;
 }
